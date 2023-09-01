@@ -1,12 +1,13 @@
 # Image Downloader
 
-Image downloader script finds image URLSs previously scraped by Image Selector in a csv file and downloads them. Images are renamed to `<web-scraper-order>-<selector-name>.ext`. This version is a fork from [webscraper.io's original script](https://github.com/webscraperio/image-downloader). I have made some small tweaks:
+Image downloader script finds image URLs previously scraped by Image Selector in a csv file and downloads them. Images are renamed to `<web-scraper-order>-<selector-name>.ext`. This version is a fork from [webscraper.io's original script](https://github.com/webscraperio/image-downloader). I have made some small tweaks:
 
 - A Windows binary (.Exe) is available for those who cannot, or will not install Python.
 - Changed the User-agent to the one for the latest Chrome on Windows 10 64-bit. The original script is reporting itself as "Chromium 63 on Ubuntu".
 - Removed the 10-second delay when downloads are completed, and replaced it with a call to Windows' built-in Pause command. This will display "Press any key to continue..." instead of closing the console window after 10 seconds.
 - Added a 0.25 second delay between each download. You can change or remove this in the source.
 - A sample scrape results file, `sample-images-dl.csv` is available for testing. You can drag-n-drop this file on the .EXE or .py file for testing.
+- Dropped support for Python 2. 
 
 ### Windows usage
 
@@ -16,8 +17,9 @@ Image downloader script finds image URLSs previously scraped by Image Selector i
 [https://github.com/LeeMeng2020/image-downloader/releases][image-downloader-releases]
 3. Scrape the target site and export data in CSV format
 4. Drag and drop the CSV file onto `image-downloader.exe`
+
 ![Fig. 1: Windows image download][windows-exe-drag-n-drop]
-5. Alternatively, if you have Python 3.x installed, drag and drop the CSV file onto `image-downloader.py`. On some computers, you may need to [enable drag & drop onto Python files](https://youtu.be/JrksuHFYrRE).
+6. Alternatively, if you have Python 3.x installed, drag and drop the CSV file onto `image-downloader.py`. On some computers, you may need to [enable drag & drop onto Python files](https://youtu.be/JrksuHFYrRE).
 
 ### MacOS, Linux usage
 
