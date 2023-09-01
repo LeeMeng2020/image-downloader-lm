@@ -16,10 +16,9 @@ Image downloader script finds image URLs previously scraped by Image Selector in
 2. Download image downloader .EXE and script from here:
 [https://github.com/LeeMeng2020/image-downloader/releases][image-downloader-releases]
 3. Scrape the target site and export data in CSV format
-4. Drag and drop the CSV file onto `image-downloader.exe`
-
+4. Drag and drop the CSV file onto `image-downloader.exe`  
 ![Fig. 1: Windows image download][windows-exe-drag-n-drop]
-6. Alternatively, if you have Python 3.x installed, drag and drop the CSV file onto `image-downloader.py`. On some computers, you may need to [enable drag & drop onto Python files](https://youtu.be/JrksuHFYrRE).
+5. Alternatively, if you have Python 3.x installed, drag and drop the CSV file onto `image-downloader.py`. On some computers, you may need to [enable drag & drop onto Python files](https://youtu.be/JrksuHFYrRE).
 
 ### MacOS, Linux usage
 
