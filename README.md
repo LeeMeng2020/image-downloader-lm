@@ -1,12 +1,12 @@
 # Image Downloader
 
-Image downloader script finds image URLSs previously scraped by Image Selector in a csv file and downloads them. Images are renamed to `<web-scraper-order>-<selector-name>.ext`. This version is a fork from webscraper.io's original at [https://github.com/webscraperio/image-downloader]. I have made some small tweaks:
+Image downloader script finds image URLSs previously scraped by Image Selector in a csv file and downloads them. Images are renamed to `<web-scraper-order>-<selector-name>.ext`. This version is a fork from [webscraper.io's original script](https://github.com/webscraperio/image-downloader). I have made some small tweaks:
 
 - A Windows binary (.Exe) is available for those who cannot, or will not install Python.
 - Changed the User-agent to the one for the latest Chrome on Windows 10 64-bit. The original script is reporting itself as "Chromium 63 on Ubuntu".
 - Removed the 10-second delay when downloads are completed, and replaced it with a call to Windows' built-in Pause command. This will display "Press any key to continue..." instead of closing the console window after 10 seconds.
 - Added a 0.25 second delay between each download. You can change or remove this in the source.
-- A sample scrape results file, `sample-images-dl.csv` is available to testing. Ypu cam drag-n-drop this file on the .EXE or .py file for testing.
+- A sample scrape results file, `sample-images-dl.csv` is available for testing. You can drag-n-drop this file on the .EXE or .py file for testing.
 
 ### Windows usage
 
