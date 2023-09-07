@@ -41,7 +41,7 @@ Image downloader script finds image URLs previously scraped by Image Selector in
 
 ### PyInstaller settings for Windows .Exe
 
-PyInstaller is [well documented here](https://pyinstaller.org/en/stable/). It is available for a few platforms. These setting were used to generate the Windows .Exe:
+PyInstaller is [well documented here](https://pyinstaller.org/en/stable/). It is available for a few platforms. These settings were used to generate the Windows .Exe:
 - PyInstaller version: 4.10
 - Python version: 3.10.8
 - PyInstaller command: pyinstaller --onefile --noupx image-downloader.py
