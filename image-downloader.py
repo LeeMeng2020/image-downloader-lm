@@ -118,7 +118,7 @@ def download_csv_file_images(filename):
         csvreader = csv.DictReader(csvfile)
         for row in csvreader:
             download_csv_row_images(row, dest_dir)
-            # delay in seconds. Disable line below for no delay.
+            # delay in seconds. Disable line below if you don't want a delay.
             time.sleep(dl_delay)
 
 def main(args):
@@ -138,8 +138,8 @@ def main(args):
     # It will display "Press any key to continue..."
     os.system('pause') 
 
-    # Restore the line below and disable the os.system line if you want 10-second delay 
-    # after downloading is done
+    # Restore the time.sleep line below and disable the os.system line if you want the 
+    # 10-second delay after downloading is done
     # time.sleep(10)
 
 main(sys.argv)
