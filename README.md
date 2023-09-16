@@ -5,7 +5,7 @@ Image downloader script finds image URLs previously scraped by Image Selector in
 - A Windows binary (.Exe) is available for those who cannot, or do not want to install Python.
 - Changed the User-agent to the one for Chrome on Windows 10 64-bit (latest version as of end August 2023). The original script is reporting itself as "Chromium 63 on Ubuntu".
 - Removed the 10-second delay when downloads are completed, and replaced it with a call to Windows' built-in Pause command. This will display "Press any key to continue..." instead of closing the console window after 10 seconds.
-- Added a 0.25 second delay between each download. You can change or remove this in the source.
+- Added a 0.25 second delay between each download. You can enable or disabled this in the source (disabled by default).
 - A sample scrape results file, `sample-images-dl.csv` is available for testing. You can drag-n-drop this file on the .Exe or .py file for testing.
 - Dropped support for Python 2. 
 

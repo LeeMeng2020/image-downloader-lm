@@ -33,7 +33,7 @@ if python_version == 3:
     opener.addheaders = [('User-agent', user_agent)]
     urllib.request.install_opener(opener)
 else:
-    print("Python 2 is not supported. Please use Python 3.")
+    print("Python 2 is not supported. Please use Python 3.x")
     print("Exiting the program...")
     sys.exit(1)
 
@@ -118,8 +118,8 @@ def download_csv_file_images(filename):
         csvreader = csv.DictReader(csvfile)
         for row in csvreader:
             download_csv_row_images(row, dest_dir)
-            # delay in seconds. Disable line below if you don't want a delay.
-            time.sleep(dl_delay)
+            # delay in seconds. Enable line below if you want a delay.
+            # time.sleep(dl_delay)
 
 def main(args):
 
@@ -132,14 +132,14 @@ def main(args):
     else:
         logging.warning("no input file found")
 
-    # Removed the 10-second delay and replaced it with call to Windows' built-in Pause
+    # Removes the 10-second delay and replaces it with call to Windows' built-in Pause
     # Enable the os.system line when creating app file with PyInstaller
     # This only works for Windows .exe
     # It will display "Press any key to continue..."
-    os.system('pause') 
+    # os.system('pause') 
 
     # Restore the time.sleep line below and disable the os.system line if you want the 
     # 10-second delay after downloading is done
-    # time.sleep(10)
+    time.sleep(10)
 
 main(sys.argv)
