@@ -37,10 +37,6 @@ else:
     print("Exiting the program...")
     sys.exit(1)
 
-    # configure headers
-    class AppURLopener(urllib.FancyURLopener):
-        version = user_agent
-    urllib._urlopener = AppURLopener()
 
 def fix_url(url):
     url = quote(url, safe="%/:=&?~#+!$,;'@()*[]")
